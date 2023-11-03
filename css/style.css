@@ -18,9 +18,7 @@
 
 }
 
-
 .name-navigator {
-    font-family: "WorkSans";
     font-size: 25px;
     font-weight: 800;
     color: #2947A9;
@@ -30,22 +28,23 @@
 
 .right-header {
     margin-top: 20px;
-    padding-left: 750px;
+    padding-left: 710px;
 }
 
 .item {
     color: black;
+    font-family: "WorkSans";
     text-decoration: none;
-    margin: 10px;
+    margin: 20px;
 }
 
-.last-item{
-    color:orange;
+.last-item {
+    color: orange;
 }
 
 .item:hover {
     color: blue;
-    transition: 1s; 
+    transition: 1s;
     text-decoration: underline;
 }
 
@@ -53,6 +52,7 @@
     background-image: url('/static/Background.jpg');
     height: 450px;
     width: 100%;
+    position: relative;
 }
 
 .text-presentation {
@@ -61,16 +61,44 @@
     font-size: 50px;
 }
 
+.information-window {
+    background-color: #3559C7;
+    height: 156px;
+    width: 280px;
+    float: right;
+    position: absolute; 
+    right: 0px; 
+    bottom: 0px;
+
+}
+.button-window {
+    background-color: #292E3D;
+    border: none;
+    color: white;
+}
+.text-info-window {
+    color: white;
+}
 .site-footer {
     background-color: #2947A9;
+    height: 50px;
 }
 
+.text-footer {
+    color: aliceblue;
+    font-size: 16px;
+    font-family: "WorkSans";
+    padding-top: 14px;
+    padding-left: 20px;
+}
 
 .boldtext {
     font-weight: 700;
 }
 
-
+.shrift {
+    font-family: "WorkSans";
+}
 @font-face {
     font-family: "WorkSans";
     src: url("fonts") format("truetype");
