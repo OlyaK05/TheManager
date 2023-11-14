@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 60px;
+    height: 10%;
+    position: relative;
 }
 
 .icon-header {
@@ -28,7 +29,9 @@
 
 .right-header {
     margin-top: 20px;
-    padding-left: 710px;
+    padding-left: 40%;
+    position: absolute;
+    right: 0px;
 }
 
 .item {
@@ -91,44 +94,111 @@
     color: white;
 }
 
+.button-back:hover {
+    background-color: #4671ff;
+}
+
+.button-next:hover {
+    background-color: #4671ff;
+}
+
 .text-info-window {
     color: white;
     text-align: center;
 
 }
 
-.empty-space {
-    margin-top: 10px;
-    width: 100%;
-    height: 150px;
+.task-manager {
+    background-color: #F6F8F7;
+    height: 500px;
+    text-align: center;
 }
 
-
-.task-form {
-    display: flex;
-    justify-content: center;
-}
 
 .task-manager-text {
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
 }
 
 .button-task-manager {
-    color: white;
+    color: #FFF;
     background-color: #2947A9;
     border-radius: 6px;
     margin-left: 10px;
     border: none;
     width: 60px;
 }
+
+.white-task-block {
+    background-color: white;
+    height: 350px;
+    width: 400px;
+    display: inline-block;
+}
+
+.task-option {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.select-option {
+    width: 70px;
+    height: 25px;
+}
+
+.task-first {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-circle {
+    padding: 4px 4px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
 /* Форма сбора данных о пользователе */
+
+.data-collection {
+    background-color: #e0e3ebd2;
+}
+
 .data-collection-form-text {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .form-question-text {
     font-size: 40px;
+}
+
+.form-data-collection {
+    text-align: center;
+}
+
+.input-collection-row {
+}
+
+.message-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-message-box {
+    width: 378px;
+    height: 100px;
+}
+
+.data-collection-button {
+    width: 450px;
+    color: white;
+    background-color: #2947A9;
+    margin-bottom: 20px;
+}
+
+.data-collection-button:hover {
+    background-color: #243B86;
 }
 
 /* Подвал сайта */

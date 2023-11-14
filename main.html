@@ -17,6 +17,7 @@
                 <p class="name-navigator boldtext shrift"><i>TheManager</i></p>
             </div>
             <div class="right-header">
+                <a class="item boldtext" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">SLAAYY</a>
                 <a class="item" href="#">Home</a>
                 <a class="item" href="#">About us</a>
                 <a class="item" href="#">Projects</a>
@@ -35,30 +36,50 @@
             </div>
         </div>
     </div>
-    <div class="empty-space">
-    </div>
     <div class="task-manager">
         <p class="task-manager-text shrift boldtext">Try it by yourself!</p>
-        <form class="task-form">
-            <input type="text" id="name" placeholder="New task...">
-            <select id="coffee-type" name="coffee-type">
-                <option value="americano">Priority...</option>
-                <option value="americano">1</option>
-                <option value="latte">2</option>
-                <option value="cappuccino">3</option>
-            </select>
-            <button class="button-task-manager shrift" type="submit">Add</button>
-        </form>
-
+        <div class="white-task-block">
+            <p class="task-option boldtext">my task</p>
+            <form class="task-form">
+                <input type="text" id="name" placeholder="New task...">
+                <select class="select-option" id="task-type" name="task-type">
+                    <option value="empty"></option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                </select>
+                <button class="button-task-manager shrift" type="submit">Add</button>
+            </form>
+            <div>
+                <div class="task-first">
+                    <div class="item-circle">1</div>
+                    <p>Task name</p>
+                </div>
+            </div>
+        </div>
         <div id="order-message"></div>
     </div>
-    <div class="data-collection-form">
+    <div class="data-collection">
         <div class="data-collection-form-text">
             <p class="form-question-text shrift">What can we do for you?</p>
             <p class="perface-text shrift">We are ready to work on a project of any complexity,
                 <br> whether it’s commercial or residential.
             </p>
         </div>
+        <form class="form-data-collection action">
+            <div class="input-collection-row">
+                <div class="input-box">
+                    <input type="text" placeholder="Name" />
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Email" />
+                </div>
+            </div>
+            <div class="message-box">
+                <input class="input-message-box "type="text" placeholder="Message..." />
+            </div>
+            <button class="data-collection-button shrift bol" type="submit">Submit</button>
+        </form>
     </div>
     <footer class="site-footer">
         <p class="text-footer">TheManager © 2023. All Rights Reserved</p>
