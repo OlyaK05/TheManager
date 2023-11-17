@@ -36,17 +36,24 @@
 
 .item {
     color: black;
-    font-family: "WorkSans";
     text-decoration: none;
     margin: 20px;
 }
 
 .last-item {
     color: orange;
+    margin: 20px;
+    text-decoration: none;
 }
 
 .item:hover {
     color: blue;
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.last-item:hover {
+    color: black;
     transition: 1s;
     text-decoration: underline;
 }
@@ -136,6 +143,10 @@
     display: inline-block;
 }
 
+.task-form {
+    margin-bottom: 20px;
+}
+
 .task-option {
     font-size: 30px;
     padding-bottom: 30px;
@@ -149,13 +160,44 @@
 .task-first {
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3px;
 }
 
-.item-circle {
-    padding: 4px 4px;
-    color: white;
-    background-color: black;
+.task-first-text {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 15;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: #FFF;
+}
+
+.circle {
+    background: #12B6F9;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+}
+
+.circle__number {
+    font-size: 1rem;
 }
 
 /* Форма сбора данных о пользователе */
@@ -169,16 +211,20 @@
     margin-bottom: 50px;
 }
 
+.bootsrap-form {
+    width: 500px;
+    margin-left: 500px;
+}
+
 .form-question-text {
     font-size: 40px;
 }
 
 .form-data-collection {
     text-align: center;
+    padding-bottom: 20px;
 }
 
-.input-collection-row {
-}
 
 .message-box {
     margin-top: 20px;
@@ -190,15 +236,9 @@
     height: 100px;
 }
 
-.data-collection-button {
-    width: 450px;
-    color: white;
-    background-color: #2947A9;
-    margin-bottom: 20px;
-}
-
-.data-collection-button:hover {
-    background-color: #243B86;
+.cats-gif-form-collection {
+    width: 150px;
+    height: auto;
 }
 
 /* Подвал сайта */
@@ -210,7 +250,6 @@
 .text-footer {
     color: aliceblue;
     font-size: 16px;
-    font-family: "WorkSans";
     padding-top: 14px;
     padding-left: 20px;
 }
@@ -220,12 +259,12 @@
 }
 
 .shrift {
-    font-family: "WorkSans";
+    font-family: "Caviar";
 }
 
 @font-face {
-    font-family: "WorkSans";
-    src: url("fonts") format("truetype");
+    font-family: "Caviar";
+    src: url("fonts/caviar-dreams.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }

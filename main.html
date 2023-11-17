@@ -14,21 +14,21 @@
         <nav class="site-navigator">
             <div class="left-header">
                 <img class="icon-header" src="static/Random Symboles 3.svg" />
-                <p class="name-navigator boldtext shrift"><i>TheManager</i></p>
+                <p class="shrift name-navigator boldtext"><i>TheManager</i></p>
             </div>
             <div class="right-header">
-                <a class="item boldtext" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">SLAAYY</a>
-                <a class="item" href="#">Home</a>
-                <a class="item" href="#">About us</a>
-                <a class="item" href="#">Projects</a>
-                <a class="item last-item" href="#">Contact Us</a>
+                <a class="item shrift boldtext" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">SLAAYY</a>
+                <a class="item shrift" href="#">Home</a>
+                <a class="item shrift" href="#">About us</a>
+                <a class="item shrift" href="#">Projects</a>
+                <a class="last-item shrift" href="#">Contact Us</a>
             </div>
         </nav>
     </header>
     <div class="site-presentation">
         <h1 class="text-presentation">Managing tasks<br>is our mission.</h1>
         <div class="information-window">
-            <p class="text-info-window shrift boldtext">Feature Projects</p>
+            <p class="shrift text-info-window boldtext">Feature Projects</p>
             <p class="text-info-window shrift"><br>Presentation of World<br>Best Task manager ever</p>
             <div class="button-site-window">
                 <button class="button-back shrift">&larr;Back</button>
@@ -39,7 +39,7 @@
     <div class="task-manager">
         <p class="task-manager-text shrift boldtext">Try it by yourself!</p>
         <div class="white-task-block">
-            <p class="task-option boldtext">my task</p>
+            <p class="task-option boldtext shrift">my task</p>
             <form class="task-form">
                 <input type="text" id="name" placeholder="New task...">
                 <select class="select-option" id="task-type" name="task-type">
@@ -52,8 +52,20 @@
             </form>
             <div>
                 <div class="task-first">
-                    <div class="item-circle">1</div>
-                    <p>Task name</p>
+                    <div class="circles">
+                        <div class="circle">
+                            <div class="circle__number">1</div>
+                        </div>
+                    </div>
+                    <p class="task-first-text shrift boldtext">Task name</p>
+                </div>
+                <div class="task-first">
+                    <div class="circles">
+                        <div class="circle">
+                            <div class="circle__number">2</div>
+                        </div>
+                    </div>
+                    <p class="task-first-text shrift boldtext">Task name</p>
                 </div>
             </div>
         </div>
@@ -65,21 +77,38 @@
             <p class="perface-text shrift">We are ready to work on a project of any complexity,
                 <br> whether it’s commercial or residential.
             </p>
+            <img class="cats-gif-form-collection" src="static/cat-typing-12.gif.webp" alt="я джифка">
+        </div>
+
+        <div class="bootsrap-form">
+            <form class="row gx-3 gy-2 align-items-center">
+                <div class="col-sm-3">
+                    <label class="visually-hidden" for="specificSizeInputName">Name</label>
+                    <input type="text" class="form-control" id="specificSizeInputName" placeholder="Name">
+                </div>
+                <div class="col-sm-3">
+                    <label class="visually-hidden" for="specificSizeInputGroupUsername">Email</label>
+                    <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Email">
+                </div>
+                <div class="col-auto">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                        <label class="form-check-label" for="autoSizingCheck2">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+            </form>
         </div>
         <form class="form-data-collection action">
-            <div class="input-collection-row">
-                <div class="input-box">
-                    <input type="text" placeholder="Name" />
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Email" />
-                </div>
-            </div>
             <div class="message-box">
-                <input class="input-message-box "type="text" placeholder="Message..." />
+                <input class="input-message-box " type="text" placeholder="Message..." />
             </div>
-            <button class="data-collection-button shrift bol" type="submit">Submit</button>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
         </form>
+
     </div>
     <footer class="site-footer">
         <p class="text-footer">TheManager © 2023. All Rights Reserved</p>
